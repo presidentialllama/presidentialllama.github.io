@@ -41,7 +41,39 @@ span.c {
 }
 
 /* Part 8 */
+p img:nth-child(1) {
+  /* cat */
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+}
+p img:nth-child(2) {
+  /* dog */
+  position: relative;
+  left: -50px;
+  top: -150px;
+}
+div img:nth-child(1) {
+  /* bird 
+    Pigeon still is part of the document, offsetting the size of the image (128px)
+    in the bottom margin and also in the top to move the pigeon over the text as 
+    it is shown in the expected results
+  */
+  position: relative;
+  margin-top: -128px;
+  top: 178px;
+  left: 250px;
+}
 
+/* Part 9 */
+nav {
+  top: 0;
+  position: sticky;
+  font-size: 20px;
+  background-color: lime;
+  opacity: 90%;
+  padding: 5px;
+}
 /* external css is imported into html using the <link> tag in the <head> section, as shown below.
 
   <head>
