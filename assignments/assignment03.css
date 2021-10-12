@@ -1,0 +1,16 @@
+/*
+author: Jason Swartzendruber
+contact: jdswart2@svsu.edu
+description: CSS for the Golf Scorecard
+*/
+
+/* center-align table columns */
+th,
+td {
+    text-align: center;
+}
+
+.wireframe {
+    padding-top: 10%;
+    text-align: center;
+}
