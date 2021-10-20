@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Assignment 4</title>
+        <title>About</title>
         <style>
             body,
             html {
@@ -19,20 +19,31 @@
                 transform: translateY(-50%);
             }
 
-            .parts a {
+            .about {
                 display: inline-block;
                 padding: 50px;
                 background-color: rgb(167, 205, 241);
                 margin-bottom: 5px;
+                font-size: x-large;
+            }
+
+            #back {
+                font-size: xx-large;
+            }
+
+            #back:hover {
+                cursor: pointer;
             }
         </style>
     </head>
     <body>
         <div class="container">
-            <div class="parts">
-                <a href="clubMeNow.html">Part 1</a>
-                <a href="assignment04-part2.html">Part 2</a>
-            </div>
+            <div class="about">ClubMeNow version 1.0.0</div>
+            <br />
+            <button id="back" onclick="back()">Go Back</button>
         </div>
+        <script>
+            let back = () => window.history.back();
+        </script>
     </body>
 </html>
