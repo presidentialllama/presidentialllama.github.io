@@ -147,6 +147,7 @@ app.controller("controller", function ($scope) {
     $scope.payments = []; // array of objects that will hold the payments
 
     // define function that will calculate payments
+    // adapted from https://codepen.io/gpcorser/pen/pogEQJw
     $scope.display = function () {
         displayChanges();
 
